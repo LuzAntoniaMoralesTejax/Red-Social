@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registro </title>
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Poppins&amp;display=swap'>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <form action="/register" method="POST">
+
+        <!--centrando contenido con wrapper-->
+        <div class="wrapper">
+
+            <!--contenedor de formulario de login-->
+            <div class="login_box">
+                <div class="login-header">
+                    <span>Registro</span>
+                </div>
+
+                <!--campos de entrada input_box-->
+                <div class="input_box">
+                    <input type="text" id="user" class="input-field" required>
+                    <label for="user" class="label">Username</label>
+                    <i class="bx bx-user icon"></i>
+                </div>
+
+                <div class="input_box">
+                    <input type="password" id="pass" class="input-field" required>
+                    <label for="pass" class="label">Password</label>
+                    <i class="bx bx-lock-alt icon"></i>
+                </div>
+
+                <div class="input_box">
+                    <input type="submit" class="input-submit" value="Register">
+                </div>
+
+                <!--No tienes una cuenta?  Registrate-->
+                <div class="register">
+                    <span>return to login page? <a href="index.html">Login</a></span>
+                </div>
+
+            </div>
+        </div>
+    </form>
+    <p id="timer">Serás redirigido en <span id="countdown">60</span> segundos...</p>
+</body>
+
+</html>
